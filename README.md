@@ -140,15 +140,15 @@ RETURN
 <table style="width: 100%; border: none;">
   <tr>
     <td style="width: 53.33%; padding: 5px; text-align: center;">
-      <img src="images/kirill_access.PNG" alt="Описание 1" style="width: 100%; max-width: 500px;">
+      <img src="images/kirill_access.PNG" alt="Доступ Кирилла" style="width: 100%; max-width: 500px;">
     </td>
     <td style="width: 53.33%; padding: 5px; text-align: center;">
-      <img src="images/anna_access.PNG" alt="Описание 2" style="width: 100%; max-width: 500px;">
+      <img src="images/anna_access.PNG" alt="Доступ Анны" style="width: 100%; max-width: 500px;">
     </td>
   </tr>
 </table>
 
-<img src="images/vladimir_access.png" alt="1" style="width:100%; max-width:600px; display: block; margin: 0 auto;">
+<img src="images/vladimir_access.PNG" alt="1" style="width:100%; max-width:600px; display: block; margin: 0 auto;">
 
 ### Комментарии
 > Основная идея пришла после прочтения статьи [2], но реализация DAX не понравилась, поэтому немного исправил по-своему. Автор предлагал широкую денормализованную таблицу доступов с фиксированным набором колонок уровней доступа AccessLevel1..AccessLevel10, в которых хранятся UPN сотрудников. DAX автора собирает список «сотрудников» для текущего помощников и проверяет наличие этих почт в каждой из фиксированных колонок (длинная цепочка OR). Такой код может выглядеть короче для очень конкретной, заранее известной структуры данных.  
